@@ -19,8 +19,10 @@
 %% Therefore [R1,R2,R3] lex [T1,T2,T3], bi(R2=T2), bi(R3>T4), bi(R4>T3). doesn't work as expected
 
 %% TODO:
-%% 1. Implement partial order relation that supports entailed check?
-%% 2. Is it possible to implement the non-ground list version, but only allow = in query?
+%% 1. Find a way to let clpr constraints waken chr constraints
+%% e.g. is there any chr predicate can reactive a chr constraint manually?
+%% 2. Implement partial order relation that supports entailed check? (still require a wake-up mechanism)
+%% 3. Is it possible to implement the non-ground list version, but only allow = in query?
 %% i.e. not allow bi(X>=Y), but allow X=Y.
 
 :- use_module(library(chr)).

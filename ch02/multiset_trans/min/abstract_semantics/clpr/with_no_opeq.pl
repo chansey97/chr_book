@@ -47,7 +47,9 @@ trig <=> true.
 %% in general, clpr cannot simulate abstract semantics, although it is OK in this example.
 
 %% TODO: any workaround?
-%% e.g. write own inequalities constraint which supports entailed or modify clpr to adapt chr?
+%% 1. Find a way to let clpr constraints waken chr constraints
+%% e.g. is there any chr predicate can reactive a chr constraint manually?
+%% 2. Implement partial order relation that supports entailed check? (still require a wake-up mechanism)
 
 %% Examples
 

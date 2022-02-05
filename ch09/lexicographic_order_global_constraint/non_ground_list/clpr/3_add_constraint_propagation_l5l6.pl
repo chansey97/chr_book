@@ -33,6 +33,11 @@ l3  @ trig \ [X|L1] lex [Y|L2] <=> entailed(X=Y)  | L1 lex L2.
 trig \ trig <=> true.
 l4  @ trig, [X|L1] lex [Y|L2] ==> {X=<Y}, trig.
 
+%% Place trig in l5 is wrong!
+%% Fixed point should be only reach when variables attribue constraint no longer changing.
+l5 @ trig \ [X,U|L1] lex [Y,V|L2] <=> entailed(U>V) | {X<Y}, trig.
+l6 @ trig \ [X,U|L1] lex [Y,V|L2] <=> entailed(U=V) | [X|L1] lex [Y|L2].
+
 trig <=> true.
 
 %% ?- [1] lex [2], trig.
@@ -60,3 +65,7 @@ trig <=> true.
 %% Fix the previous problem by l4
 %% ?- [R|Rs] lex [T|Ts], {R=\=T}, trig.
 %@ {$VAR(_A)>=0.0,$VAR(T)= $VAR(R)+ $VAR(_A),$VAR(_)= - $VAR(_A),$VAR(_A)=\=0.0}.
+
+
+%% ?- [R1,R2,R3] lex [T1,T2,T3], bi(R2=T2), bi(R3>T3).
+

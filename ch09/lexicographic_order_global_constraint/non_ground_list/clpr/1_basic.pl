@@ -5,6 +5,13 @@
 
 %% We assuming with the same length.
 
+%% N.B.
+%% In the current implementation, clpr constrains (e.g. the {X=<Y} in query) can not waken chr constraints,
+%% see https://swi-prolog.discourse.group/t/interaction-between-chr-and-clp-r/4982
+
+%% These directory try to use trig/0 to simulate wake, but not good.
+%% So don't look at it...
+
 :- use_module(library(chr)).
 :- use_module(library(clpr)).
 
@@ -16,6 +23,7 @@
 
 l1  @ trig \ [] lex [] <=> true.
 l2  @ trig \ [X|L1] lex [Y|L2] <=> entailed(X<Y) | true.
+
 l3  @ trig \ [X|L1] lex [Y|L2] <=>  X==Y | L1 lex L2.
 trig <=> true.
 
