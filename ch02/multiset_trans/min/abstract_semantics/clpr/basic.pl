@@ -32,8 +32,8 @@ trig <=> true.
 
 %% So in guard, we must use entailed to test the store instead of attach constraints. It is
 %% something like closed-world assumption. Note that clpfd even has no entailed predicate!
-%% TODO: This entailed predicate is important, see Compiling Ask Constraints by
-%% Gregory J. Duck1, Mar´ıa Garc´ıa de la Banda2, and Peter J. Stuckey1
+%% TODO: This entailed predicate is important, see Compiling Ask Constraints by Gregory J. Duck,
+%% Extending Arbitrary Solvers with Constraint Handling Rules by Gregory J. Duck.
 
 %% 2. It doesn't work if no trig, since the wake-up policy of the current implementation
 %% doesn't seem consider builit-in constraints other than =. For example, the newly

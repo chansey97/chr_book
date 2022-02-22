@@ -14,6 +14,7 @@
 %% Using kept constraints in head to simulate entailed in guard. It usually causes problems, for example,
 %% if there is a bi(X=<5) in store, it imply X=<6, so you can use entailed(X=<6) in guard, but in this
 %% simulation you can not match bi(X=<6) in head, because there is no bi(X=<6) in the store.
+%% TODO: see Extending Arbitrary Solvers with Constraint Handling Rules by Gregory J. Duck.
 
 %% 2. Not support transitivity
 %% Therefore [R1,R2,R3] lex [T1,T2,T3], bi(R2=T2), bi(R3>T4), bi(R4>T3). doesn't work as expected
