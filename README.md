@@ -31,7 +31,7 @@ Note that most of the examples in this book cannot work directly in SWI-Prolog (
       - Temporal reasoning
         - [PA network](ch08/consistency_techniques/path_consistency/temporal_reasoning/qualitative_time_point/pa_network)
         - [Simple-Temporal-Network (STN)](ch08/consistency_techniques/path_consistency/temporal_reasoning/quantitative_time_point)
-  - [Sudoku](https://github.com/chansey97/chr_book/blob/main/ch08/sudoku.pl)
+  - [Sudoku (try-most-constrained-field-first)](https://github.com/chansey97/chr_book/blob/main/ch08/sudoku.pl)
 - Chapter 9: Infinite domain constraint solvers
   - Linear polynomial equation solving
     - [Variable elimination](ch09/linear_polynomial_equation_solving/equation/variable_elimination)
