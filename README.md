@@ -21,24 +21,17 @@ Note that most of the examples in this book cannot work directly in SWI-Prolog (
     - [Boolean cardinality](https://github.com/chansey97/chr_book/blob/main/ch08/boolean/propositional_logic/boolean_cardinality.pl)
     - [Resolution](ch08/boolean/propositional_logic/resolution)
       - [Davis–Putnam procedure](https://github.com/chansey97/chr_book/blob/main/ch08/boolean/propositional_logic/resolution/6_dp.pl)
-
   - Consistency techniques
     - Arc consistency
-
       - Finite domain
-
         - [Interval domains](ch08/consistency_techniques/arc_consistency/fd/interval_domain)
-
         - [Enumeration_domain](ch08/consistency_techniques/arc_consistency/fd/enumeration_domain)
         - [N-Queen](ch08/consistency_techniques/arc_consistency/fd/nqueens)
     - Path consistency
-      
       - Temporal reasoning
         - [PA network](ch08/consistency_techniques/path_consistency/temporal_reasoning/qualitative_time_point/pa_network)
         - [Simple-Temporal-Network (STN)](ch08/consistency_techniques/path_consistency/temporal_reasoning/quantitative_time_point)
-
   - [Sudoku](https://github.com/chansey97/chr_book/blob/main/ch08/sudoku.pl)
-
 - Chapter 9: Infinite domain constraint solvers
   - Linear polynomial equation solving
     - [Variable elimination](ch09/linear_polynomial_equation_solving/equation/variable_elimination)
@@ -47,8 +40,7 @@ Note that most of the examples in this book cannot work directly in SWI-Prolog (
   - [Description logic](ch09/description_logic)
   - [Rational trees](ch09/rational_tree)
   - [Feature terms](ch09/feature_term)
-
-- Union-find algorithm
+- Chapter 10: Union-find algorithm
   - [Traditional union-find](ch10/1_uf)
   - [Generalized union-find](ch10/2_guf)
 
