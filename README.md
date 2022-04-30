@@ -14,7 +14,7 @@ Note that most of the examples in this book cannot work directly in SWI-Prolog (
   - [Hamming’s problem](ch02/graph/merge_sort/hamming_problem)
 - Chapter 6:  Rule-based and graph-based formalisms in CHR
   - [Production rule systems](ch06/rule_based_system/production_system)
-  - [Event–condition–action rules](ch06/rule_based_system/event_condition_action_system)
+  - [Event condition action rules](ch06/rule_based_system/event_condition_action_system)
   - [Term rewriting systems](ch06/rewriting_system/standard_trs)
 - Chapter 8: Finite domain constraint solvers
   - Boolean algebra and propositional logic
